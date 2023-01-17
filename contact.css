@@ -1,0 +1,90 @@
+/* Social Media section */
+#social-media {
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #social-media .social-media-content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #social-media .social-media-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #social-media .social-media-content li {
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  #social-media .social-media-content a {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #social-media .social-media-content span {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #social-media .social-media-content a:before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F8F9FA;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #social-media .social-media-content a:hover:before {
+    transform: scaleX(1);
+  }
+  
+  /* Facebook background color */
+  #social-media .social-media-content li.facebook a:hover:before {
+    background-color: #3b5998;
+  }
+  
+  /* Twitter background color */
+  #social-media .social-media-content li.twitter a:hover:before {
+    background-color: #1da1f2;
+  }
+  
+  /* Instagram background color */
+  #social-media .social-media-content li.instagram a:hover:before {
+    background-color: #e1306c;
+  }
+  
+  /* LinkedIn background color */
+  #social-media .social-media-content li.linkedin a:hover:before {
+    background-color: #0077b5;
+  }
+
+  .box {
+    width: 715px;
+    height: 80px;
+    border: 3px solid #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* center horizontally and vertically */
+    position: relative;
+  }
